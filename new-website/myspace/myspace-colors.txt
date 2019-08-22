@@ -1,0 +1,22 @@
+body font: Verdana
+
+myspace blue: #155abb
+
+page links: #384474
+
+h1 background: #ffcd93
+
+h1 and h2 font color: #dc771c
+
+all table h1: #6399d2
+
+all table links: #2b4368 or #375061
+
+contact table highlights: #d87b28
+
+
+Details table: 
+#436f99
+
+question side: #afd1f3
+answer side: #d9e9f5
