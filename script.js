@@ -41,7 +41,7 @@ $(document).ready(function() {
 
 });
 
-var nameText = 'My Name'
+var nameText = 'Acates Media'
 $('.name').text(nameText);
 
 
