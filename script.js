@@ -8,7 +8,27 @@ function init() {*/
   }, 1000);
 });*/
 
-
+var images = new Array()
+function preload() {
+  for (i = 0; i < preload.arguments.length; i++) {
+    images[i] = new Image()
+    images[i].src = preload.arguments[i]
+  }
+}
+preload(
+  "images/acates-media-1.jpg",
+  "images/logo.png",
+  "images/static1.gif",
+  "images/dev-logo.png",
+  "images/dev-logo.gif",
+  "images/logos/logo-1.png",
+  "images/logos/logo-2.png",
+  "images/logos/logo-3.png",
+  "images/logos/logo-4.png",
+  "images/logos/logo-5.png",
+  "images/logos/logo-6.png",
+)
+//--><!]]>
 
 $(document).ready(function() {
   // On scale transitions

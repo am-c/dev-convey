@@ -106,17 +106,19 @@
       <br>
 
       <div class="am-container myspace">
-          <nav class="navbar navbar-expand-lg">
-          
+          <nav class="navbar navbar-expand-lg navbar-dark">
+<!--               <form class="search form-inline my-2 my-lg-0" style="float:right;">
+                  <input class="form-control mr-sm-2" type="search" aria-label="Search">
+                  <button type="button" class="btn btn-basic btn-xs">Search</button>
+                </form> -->
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myspace-nav" aria-controls="myspace-nav" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
                 <a class="navbar-brand" href="index.html"><img src="myspace/myspace-logo.png" alt="myspace logo">myspace </a>
                <!--  <span>&#8482;</span> -->
-                <form class="form-inline my-2 my-lg-0" style="float:right;">
-                    <input  style="padding: .1rem .2rem;  font-size: 1em;" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button style="padding: .1rem .2rem; font-size: 1em;" type="button" class="btn btn-basic btn-xs">Search</button>
-                  </form>
+
+
+
                 <div class="collapse navbar-collapse" id="myspace-nav">
                   <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item active">
@@ -165,6 +167,35 @@
                                   </div>
                                 </li>
                   </ul>
+                  <style>
+                    .gsib_a {
+    /* width: 100%; */
+    padding: 0;
+}
+/*                   .cse .gsc-control-cse, .gsc-control-cse {
+    padding: 0 !important;
+
+} */
+.cse .gsc-control-cse, .gsc-control-cse {
+    background-color: #fff;
+    padding: 1%;
+
+}
+form.gsc-search-box {
+    font-size: 12px;
+    margin-bottom: 0;
+}
+.cse .gsc-search-button-v2, .gsc-search-button-v2 {
+cursor: pointer;
+
+
+}</style>
+                  <div class="search"><div class="gcse-search"></div></div>
+            <!--       <form class="search form-inline my-2 my-lg-0 gcse-search">
+                    
+                      <input class="form-control mr-sm-2" type="search" style="font-size: 12px;">
+                      <button class="btn btn-light my-2 my-sm-0" type="submit" style="font-size: 12px; text-transform: none;">Search</button>
+                    </form> -->  
                   <ul class="nav justify-content-end">
                       <li class="nav-item">
                         <a class="nav-link active" href="#">My Account</a>
@@ -174,27 +205,25 @@
                       </li>
                   
                     </ul>
+
                 </div>
             </nav>
-        <div class="container" style="background-color: #fff !important;">
+        <div class="container-fluid myspace" style="background-color: #fff !important; display: inline-block;">
 
-          <nav class=""></nav>
-
-          <div class="merge">
             <div class="half-01">
               <div class="about-me">
                 <h1><span class="name"></span></h1>
                 <span style="float: left;">
 
-                  <img src="images/profile-pic.jpg" class="profile-pic">
+                  <img src="images/myspace/profile-pic.jpg" class="profile-pic">
                   <p>View My: <a href="#">Pics</a> | <a href="#">Videos</a></p>
                   <p><strong>Mood:</strong> <span class="mood"></span></p>
                 </span>
                 <span style="float:right;">
-                  <p>"Main quote!"</p>
-                  <p>Gender</p>
-                  <p>Age</p>
-                  <p>Location</p>
+                  <p>"To be great is to be<br/> misunderstood"</p>
+                  <p>Female</p>
+                  <p>32</p>
+                  <p>Pensacola, FL</p>
                   <!--     <p class="online-now"><i class="fas fa-user"></i> Online Now!</p> -->
                   <img src="myspace/online-now.gif">
                   <br style="clear:both;" />
@@ -274,7 +303,8 @@
               <h1><span class="name"></span> Blurbs</h1>
               <h2>About Me</h2>
               <p>
-                I think MySpace missed an opportunity by not providing its old users access to their profile as the user left it. 
+                I think MySpace missed an opportunity by not providing its old users access to their profile as the user left it. <br/>
+                <!-- Even if they changed/updated their UI, they didn't have to throw away all of the content from like 04-09!<br/> -->
                 <img src="myspace/underoath.gif">
                 
 
@@ -292,13 +322,27 @@
                 metus congue. Erat nulla tincidunt libero tellus urna cursus, nonummy ac nostra non. Turpis dis neque donec integer suspendisse, habitasse exercitation aut porttitor quam quisque. Etiam felis blandit aliquam, risus sem, arcu in wisi.
               </p>
               <h1><span class="name"></span>'s Friend Space</h1>
+              <div class="top-8">
+                <ul>
+                  <li>
+            <!--   <span>Tom</span>  -->
+              <img src="images/myspace/myspace-tom.jpg" class="top-8"></li>
+             <li>  
+               <!--  Friend -->
+               <img src="images/myspace/profile-pic.jpg"></li>
+             <li> <img src="images/myspace/profile-pic.jpg"></li>
+             <li> <img src="images/myspace/profile-pic.jpg"></li>
+             <li> <img src="images/myspace/profile-pic.jpg"></li>
+             <li> <img src="images/myspace/profile-pic.jpg"></li>
+             <li> <img src="images/myspace/profile-pic.jpg"></li>
+             <li> <img src="images/myspace/profile-pic.jpg"></li>
+            </ul>
+            </div>
             </div>
             <!-- #content -->
             <br>
 
 
-
-          </div>
         </div>
       </div>
 
@@ -395,22 +439,27 @@
                 <ul class="list-unstyled list-inline">
                   <li class="list-inline-item">
                     <a href="https://www.facebook.com/acatesmedia/" class="btn-floating btn-sm rgba-white-slight mx-1">
-                      <i class="fa fa-facebook"></i>
+                      <i class="fab fa-facebook-f"></i>
                     </a>
                   </li>
                   <li class="list-inline-item">
                     <a href="https://twitter.com/acatesmedia" class="btn-floating btn-sm rgba-white-slight mx-1">
-                      <i class="fa fa-twitter"></i>
+                      <i class="fab fa-twitter"></i>
                     </a>
                   </li>
                   <li class="list-inline-item">
                     <a href="https://www.instagram.com/acatesmedia/" class="btn-floating btn-sm rgba-white-slight mx-1">
-                      <i class="fa fa-instagram"></i>
+                      <i class="fab fa-instagram"></i>
                     </a>
                   </li>
                   <li class="list-inline-item">
                     <a href="https://www.linkedin.com/in/amcates/" class="btn-floating btn-sm rgba-white-slight mx-1">
-                      <i class="fa fa-linkedin"></i>
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="https://github.com/am-c" class="btn-floating btn-sm rgba-white-slight mx-1">
+                      <i class="fab fa-github"></i>
                     </a>
                   </li>
                 </ul>
@@ -436,6 +485,8 @@
     <script src="js/jquery.ui.touch-punch.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="script.js"></script>
+    <script async src="https://cse.google.com/cse.js?cx=007745215328835509109:tmyu6xslvsu"></script>
+
 
   </body>
 
