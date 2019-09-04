@@ -601,7 +601,7 @@ article h1 {
   float: left;
   width: 35%;
   height: 100%;
-  padding-top: 30px;
+  /* padding-top: 30px; */
   padding-left: 10px;
   padding-right: 5px;
   background-color: white;
@@ -677,6 +677,7 @@ h1 {
   margin-bottom: .2em;
   clear: both;
   padding: 0 3px;
+  text-align:left;
 }
 
 h3 {
@@ -725,7 +726,7 @@ h3 {
 
 .myspace h1,
 .myspace h1 span {
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .myspace h2 {
@@ -999,11 +1000,12 @@ h3 {
 .myspace .contact-table h1 span {
   background-color: #6399d2;
   color: white;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .myspace .details-table {
   margin-top: 5%;
+  clear: both;
 }
 
 .myspace .details-table .s1 ul,
@@ -1018,6 +1020,7 @@ h3 {
   font-weight: bold;
   margin: 1%;
   padding: 0 1% 0 1%;
+  
 }
 
 .myspace .details-table .s2 ul li {
@@ -1032,21 +1035,50 @@ h3 {
 }
 
 .myspace .details-table .s2 {
-
   /*   display: inline-block; */
   width: 49.9%;
   float: right;
 }
 
-.myspace .top-8 ul li {
-  list-style-type:none;
-  display:inline;
+
+
+.friend-space {
+  margin-bottom: 5%;
+  text-align: center;
 }
+.top-8 {
+  width: 20%;
+  display:inline-block;
+  margin: 1%;
+  text-align: center;
+}
+
+.top-8 p {
+  margin: 0 !important;
+  padding: 2%;
+  padding-bottom: 1%;
+}
+.top-8 img {
+  width: 100%;
+  display:inline-block;
+  margin-bottom: 10%;
+}
+figure {
+  display: table;
+  }
+  figcaption {
+  display: table-caption;
+  caption-side: top;
+  text-align:center;
+  }
+
 .myspace .top-8 img {
-  width: 24%;
+/*   width: 24%; */
   padding: 2%;
   padding-top: 1%;
   padding-bottom: 1%;
+  max-width: 180px;
+  transition: 0.5s ease-in-out;
 }
 
 /* end MySpace */
@@ -1348,6 +1380,13 @@ h3 {
     padding:1%;
     margin: 0 auto;
 }
+.myspace nav {
+  padding: 2%;
+}
+#myspace-nav {
+  padding: 0;
+}
+
 }
 
 @media (min-width: 992px) {
@@ -1423,12 +1462,6 @@ h3 {
     padding: 0.5%;
   }
 
-  .myspace nav {
-    padding: 1%;
-  }
-  #myspace-nav {
-    padding: 0;
-  }
 
   .half-01,
   .body-top {
@@ -1627,3 +1660,4 @@ h3 {
     font-size: 8px !important;
   }*/
 }
+

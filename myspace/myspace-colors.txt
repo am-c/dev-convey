@@ -20,3 +20,10 @@ Details table:
 
 question side: #afd1f3
 answer side: #d9e9f5
+
+
+audio
+
+black: #323232
+
+gray: #d3d1d2
