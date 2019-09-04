@@ -21,12 +21,13 @@ preload(
   "images/static1.gif",
   "images/dev-logo.png",
   "images/dev-logo.gif",
-  "images/logos/logo-1.png",
+  "images/logos/logo.png",
+  "images/logos/logo-0.png",
   "images/logos/logo-2.png",
   "images/logos/logo-3.png",
-  "images/logos/logo-4.png",
-  "images/logos/logo-5.png",
   "images/logos/logo-6.png",
+  "images/logos/logo-8.png",
+  "images/logos/logo-10.png"
 )
 //--><!]]>
 
