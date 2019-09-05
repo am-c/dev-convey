@@ -9,6 +9,7 @@ function init() {*/
 });*/
 
 var images = new Array()
+
 function preload() {
   for (i = 0; i < preload.arguments.length; i++) {
     images[i] = new Image()
@@ -68,27 +69,27 @@ $('.name').text(nameText);
 $('.too-small h1').each(function() {
   var toRepeat = $(this).html();
   var times = parseInt($(this).attr('repeat'));
-  var repeated = Array(times+1).join(toRepeat);
+  var repeated = Array(times + 1).join(toRepeat);
   $(this).text(repeated).removeAttr('repeat');
 
 });
 /* if($('.dude').css('display') == 'block') {
   $('.too-small h1').html('2 small '); 
 }  */
-$( window ).resize(function() {
- if($('.dude').css('display') == 'block') {
-  $('.too-small h1').html("wayy <br/> 2 small <span class='icon'>&#129418;</span>"); 
-} 
+$(window).resize(function() {
+  if ($('.dude').css('display') == 'block') {
+    $('.too-small h1').html("wayy <br/> 2 small <span class='icon'>&#129418;</span>");
+  }
 
-$('.too-small h1').each(function() {
-  var toRepeat = $(this).html();
-  var times = parseInt($(this).attr('repeat'));
-  var repeated = Array(times+1).join(toRepeat);
-  $(this).text(repeated).removeAttr('repeat');
+  $('.too-small h1').each(function() {
+    var toRepeat = $(this).html();
+    var times = parseInt($(this).attr('repeat'));
+    var repeated = Array(times + 1).join(toRepeat);
+    $(this).text(repeated).removeAttr('repeat');
 
+  });
 });
-});
-var mood = ["scene <span class='icon'>&#129311;</span>", "wise <span class='icon'>&#127776;</span>", "love <span class='icon'>&#10084;</span>", "wild <span class='icon'>&#129426;</span>","dork proof <span class='icon'>&#9889;</span>", "life <span class='icon'>&#x1F344;</span>", "nostalgic <span class='icon'>&#x1F4C0;</span>", "HG summer <span class='icon'>&#127774;</span>", "creative <span class='icon'>&#x1F30C;</span>", "amaze <span class='icon'>&#128008;</span>", "dk <span class='icon'>&#10068;</span>", "vibes <span class='icon'>&#x1F334;</span>", "cringey <span class='icon'>&#x1F345;</span>", "fall basic <span class='icon'>&#x1F342;</span>", "hungry <span class='icon'>&#127829;</span>", "brave <span class='icon'>&#x1F981;</span>","trendy <span class='icon'>&#129361;</span>","3rd <span class='icon'>&#x1F949;</span>","nutritious <span class='icon'>&#129382;</span>","animal <span class='icon'>&#129418;</span>","royal <span class='icon'>&#129332;</span>","awkward <span class='icon'>&#128760;</span>","pure <span class='icon'>&#128330;</span>","fascinate <span class='icon'>&#128142;</span>","troll <span class='icon'>&#x1F44C;</span>"," <span class='icon'>&#128007;</span>","power <span class='icon'>&#127993;</span>","neat <span class='icon'>&#127905;</span>","pawn <span class='icon'>&#9823;</span>","star <span class='icon'>&#11088;</span>","rat <span class='icon'>&#128001;</span>","sheep <span class='icon'>&#128017;</span>","g.o.a.t <span class='icon'>&#128016;</span>","flaunT <span class='icon'>&#128038;</span>", "weird <span class='icon'>&#128125;</span>","British <span class='icon'>&#128130;</span>","fun <span class='icon'>&#129428;</span>"];
+var mood = ["scene <span class='icon'>&#129311;</span>", "wise <span class='icon'>&#127776;</span>", "love <span class='icon'>&#10084;</span>", "wild <span class='icon'>&#129426;</span>", "dork proof <span class='icon'>&#9889;</span>", "life <span class='icon'>&#x1F344;</span>", "nostalgic <span class='icon'>&#x1F4C0;</span>", "HG summer <span class='icon'>&#127774;</span>", "creative <span class='icon'>&#x1F30C;</span>", "amaze <span class='icon'>&#128008;</span>", "dk <span class='icon'>&#10068;</span>", "vibes <span class='icon'>&#x1F334;</span>", "cringey <span class='icon'>&#x1F345;</span>", "fall basic <span class='icon'>&#x1F342;</span>", "hungry <span class='icon'>&#127829;</span>", "brave <span class='icon'>&#x1F981;</span>", "trendy <span class='icon'>&#129361;</span>", "3rd <span class='icon'>&#x1F949;</span>", "nutritious <span class='icon'>&#129382;</span>", "animal <span class='icon'>&#129418;</span>", "royal <span class='icon'>&#129332;</span>", "awkward <span class='icon'>&#128760;</span>", "pure <span class='icon'>&#128330;</span>", "fascinate <span class='icon'>&#128142;</span>", "troll <span class='icon'>&#x1F44C;</span>", " <span class='icon'>&#128007;</span>", "power <span class='icon'>&#127993;</span>", "neat <span class='icon'>&#127905;</span>", "pawn <span class='icon'>&#9823;</span>", "star <span class='icon'>&#11088;</span>", "rat <span class='icon'>&#128001;</span>", "sheep <span class='icon'>&#128017;</span>", "g.o.a.t <span class='icon'>&#128016;</span>", "flaunT <span class='icon'>&#128038;</span>", "weird <span class='icon'>&#128125;</span>", "British <span class='icon'>&#128130;</span>", "fun <span class='icon'>&#129428;</span>"];
 
 var counter = 0;
 var elem = $(".mood");
@@ -96,6 +97,7 @@ mood.sort(() => Math.random() - 0.5);
 var inst = setInterval(change, 50000);
 //$(".mood").html("scene <span class='icon'>&#129311;</span>");
 $('.mood').html(mood[counter]);
+
 function change() {
   $(".mood").html(mood[counter]);
   counter++;

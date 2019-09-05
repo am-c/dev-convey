@@ -87,9 +87,9 @@ div,
 span,
 img {
   -moz-transition: width 1s ease-in-out, left 1.5s ease-in-out;
-    -webkit-transition: width 1s ease-in-out, left 1.5s ease-in-out;
-    -o-transition: width 1s ease-in-out, left 1.5s ease-in-out;
-    transition: 1s ease-out;
+  -webkit-transition: width 1s ease-in-out, left 1.5s ease-in-out;
+  -o-transition: width 1s ease-in-out, left 1.5s ease-in-out;
+  transition: 1s ease-out;
 }
 
 .am-cube {
@@ -174,15 +174,16 @@ img {
   }
 }
 
-.too-small, .dude {
-background-color: white;
-position: fixed;
-width: 100%;
-height: 200%;
-z-index: 11;
-top: 0;
-bottom: 0;
-display:none;
+.too-small,
+.dude {
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  height: 200%;
+  z-index: 11;
+  top: 0;
+  bottom: 0;
+  display: none;
 }
 
 .wrap {
@@ -193,6 +194,7 @@ display:none;
 .mobile-view {
   display: none;
 }
+
 .amc-center {
   margin: 0 auto;
 }
@@ -694,7 +696,7 @@ h1 {
   margin-bottom: .2em;
   clear: both;
   padding: 0 3px;
-  text-align:left;
+  text-align: left;
 }
 
 h3 {
@@ -863,8 +865,10 @@ h3 {
   right: 0.5%;
   top: 8%;
 }
-.myspace .search input, .myspace .search button  {
-/*   font-size: 1em;
+
+.myspace .search input,
+.myspace .search button {
+  /*   font-size: 1em;
   padding: .1rem .2rem; */
   text-transform: none;
 }
@@ -1039,7 +1043,7 @@ h3 {
   font-weight: bold;
   margin: 1%;
   padding: 0 1% 0 1%;
-  
+
 }
 
 .myspace .details-table .s2 ul li {
@@ -1064,9 +1068,10 @@ h3 {
   margin-bottom: 5%;
   text-align: center;
 }
+
 .top-8 {
   width: 20%;
-  display:inline-block;
+  display: inline-block;
   margin: 1%;
   text-align: center;
 }
@@ -1076,33 +1081,38 @@ h3 {
   padding: 2%;
   padding-bottom: 1%;
 }
+
 .top-8 img {
   width: 100%;
-  display:inline-block;
+  display: inline-block;
   margin-bottom: 10%;
 }
+
 figure {
   display: table;
-  }
-  figcaption {
+}
+
+figcaption {
   display: table-caption;
   caption-side: top;
-  text-align:center;
-  }
+  text-align: center;
+}
 
 .myspace .top-8 img {
-/*   width: 24%; */
+  /*   width: 24%; */
   padding: 2%;
   padding-top: 1%;
   padding-bottom: 1%;
   max-width: 180px;
   transition: 0.5s ease-in-out;
 }
+
 .myspace .comments {
-text-align:left;
-width: 60%;
-float: left;
+  text-align: left;
+  width: 60%;
+  float: left;
 }
+
 /* end MySpace */
 
 .page-footer {
@@ -1374,14 +1384,17 @@ float: left;
 
 @media (max-width: 1156px) {
 
-    .myspace .about-me span {
-      display: inherit;
-    }
-    .myspace .about-me p:nth-child(3),.myspace .about-me span:nth-child(3) {
-      display: block;
+  .myspace .about-me span {
+    display: inherit;
   }
 
+  .myspace .about-me p:nth-child(3),
+  .myspace .about-me span:nth-child(3) {
+    display: block;
   }
+
+}
+
 @media (max-width: 1100px) {
 
   .about-me {
@@ -1389,28 +1402,32 @@ float: left;
     text-align: center;
 
   }
+
   .myspace .about-me img:first-child {
     width: 100%;
     padding: 20%;
     padding-top: 0;
     padding-bottom: 5%;
-  } 
+  }
+
   .myspace .about-me img {
     width: 28%;
     padding: 0;
     padding-bottom: 5%;
-     
-}
+
+  }
 
   .myspace .about-me span {
-    float:none !important;
+    float: none !important;
     display: unset;
   }
-/*    .myspace .about-me p:nth-child(3) {
+
+  /*    .myspace .about-me p:nth-child(3) {
     display: unset;
   }  */
 
 }
+
 @media (max-width: 991px) {
 
   .has-animation,
@@ -1431,18 +1448,21 @@ float: left;
   .slide-h1 {
     font-size: 35px;
   }
+
   .myspace .search {
     position: relative;
     width: 100%;
-    padding:1%;
+    padding: 1%;
     margin: 0 auto;
-}
-.myspace nav {
-  padding: 2%;
-}
-#myspace-nav {
-  padding: 0;
-}
+  }
+
+  .myspace nav {
+    padding: 2%;
+  }
+
+  #myspace-nav {
+    padding: 0;
+  }
 
 }
 
@@ -1478,7 +1498,7 @@ float: left;
 }
 
 
-  @media (max-width: 956px) {
+@media (max-width: 956px) {
   .logo-font {
     font-size: 25px;
   }
@@ -1516,7 +1536,7 @@ float: left;
     text-align: center;
   }
 
- .myspace .navbar-toggler-icon {
+  .myspace .navbar-toggler-icon {
     padding: 0.5%;
   }
 
@@ -1524,27 +1544,29 @@ float: left;
   .half-01 {
     width: 100%;
   }
-.half-02 {
-  width: 100%;
-}
 
-.desktop-view {
-  display:none;
-}
+  .half-02 {
+    width: 100%;
+  }
 
-.mobile-view {
-  display: block;
-}
-.myspace .about-me img {
-  width: 10%;
-}
+  .desktop-view {
+    display: none;
+  }
 
-.myspace .about-me img:first-child {
-  width: 30%;
-  padding: 2%;
-  padding-top: 0;
-  padding-bottom: 5%;
-}
+  .mobile-view {
+    display: block;
+  }
+
+  .myspace .about-me img {
+    width: 10%;
+  }
+
+  .myspace .about-me img:first-child {
+    width: 30%;
+    padding: 2%;
+    padding-top: 0;
+    padding-bottom: 5%;
+  }
 
   .img-wrap {
     width: 50%;
@@ -1555,17 +1577,20 @@ float: left;
   .myspace .about-me img {
     width: 15%;
   }
-  
+
 }
+
 @media (max-width: 674px) {
   .myspace .contact-table div {
     padding: 2% !important;
   }
+
   .myspace .contact-table div {
-margin:0 !important;
+    margin: 0 !important;
   }
-  
+
 }
+
 @media (max-width: 588px) {
   .jumbotron p {
     margin-bottom: 5px !important;
@@ -1579,10 +1604,11 @@ margin:0 !important;
   .services-h1 {
     font-size: 5vw;
   }
+
   .myspace .comments {
-  
-  width: auto;
-}
+
+    width: auto;
+  }
 }
 
 @media (max-width: 530px) {
@@ -1724,8 +1750,8 @@ margin:0 !important;
 }
 
 
-@media only screen and (max-width: 351px) {
-}
+@media only screen and (max-width: 351px) {}
+
 /* Max Width 300 */
 
 @media only screen and (max-width: 300px) {
@@ -1760,22 +1786,26 @@ margin:0 !important;
 
 @media only screen and (max-width:349px) {
   .too-small {
-display:block;
-    }
-    .too-small h1 {
-      position: absolute;
-      z-index: 11;
-    }
-.too-small div {
-margin-top:50%;
-    }
+    display: block;
   }
-    @media only screen and (max-width:200px) {
+
+  .too-small h1 {
+    position: absolute;
+    z-index: 11;
+  }
+
+  .too-small div {
+    margin-top: 50%;
+  }
+}
+
+@media only screen and (max-width:200px) {
+
   /*     .too-small {
     display: none;
         } */
-        .dude {
-          display:block;
-        }
+  .dude {
+    display: block;
+  }
 
 }
