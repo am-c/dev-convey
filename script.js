@@ -65,11 +65,20 @@ $(document).ready(function() {
 var nameText = 'Acates Media'
 $('.name').text(nameText);
 
+$('.too-small h1').each(function() {
+  var toRepeat = $(this).html();
+  var times = parseInt($(this).attr('repeat'));
+  var repeated = Array(times+1).join(toRepeat);
+  $(this).text(repeated).removeAttr('repeat');
+
+});
+/* if($('.dude').css('display') == 'block') {
+  $('.too-small h1').html('2 small '); 
+}  */
 $( window ).resize(function() {
-if($('.dude').css('display') == 'block') {
-  console.log('block');
-  $('.too-small h1').html('2 smol '); 
-}
+ if($('.dude').css('display') == 'block') {
+  $('.too-small h1').html("wayy <br/> 2 small <span class='icon'>&#129418;</span>"); 
+} 
 
 $('.too-small h1').each(function() {
   var toRepeat = $(this).html();
