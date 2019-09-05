@@ -172,6 +172,17 @@ img {
   }
 }
 
+.too-small, .dude {
+background-color: white;
+position: fixed;
+width: 100%;
+height: 200%;
+z-index: 1;
+top: 0;
+bottom: 0;
+display:none;
+}
+
 .wrap {
   max-width: 1600px;
   margin: 0 auto;
@@ -277,6 +288,7 @@ a:hover {
 
   50% {
     background-color: blue;
+    background-image: url("images/static1.gif");
     transform: translateY(-15px);
   }
 
@@ -1041,7 +1053,6 @@ h3 {
 }
 
 
-
 .friend-space {
   margin-bottom: 5%;
   text-align: center;
@@ -1080,7 +1091,11 @@ figure {
   max-width: 180px;
   transition: 0.5s ease-in-out;
 }
-
+.myspace .comments {
+text-align:left;
+width: 60%;
+float: left;
+}
 /* end MySpace */
 
 .page-footer {
@@ -1489,6 +1504,10 @@ figure {
   .services-h1 {
     font-size: 5vw;
   }
+  .myspace .comments {
+  
+  width: auto;
+}
 }
 
 @media (max-width: 530px) {
@@ -1661,3 +1680,24 @@ figure {
   }*/
 }
 
+@media only screen and (max-width:290px) {
+  .too-small {
+display:block;
+    }
+    .too-small h1 {
+      position: absolute;
+      z-index: 1;
+    }
+.too-small div {
+margin-top:50%;
+    }
+  }
+    @media only screen and (max-width:200px) {
+  /*     .too-small {
+    display: none;
+        } */
+        .dude {
+          display:block;
+        }
+
+}
