@@ -1123,7 +1123,75 @@ figcaption {
 }
 
 /* end MySpace */
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
 
+#animate {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: url('images/cat.png');
+  width: 10%;
+  height: 20%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index:1111;
+  transition: 1.5s ease-in-out;
+
+
+}
+
+
+.animated {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+  animation: 10s linear 0s slide 1;
+
+}
+
+@keyframes slide {
+  0% { 
+
+
+  right: 0;
+ }
+  100% {
+    right: 100%;
+
+/*     transform: translateX(-100%);
+    background: blue; */
+  }
+
+}
+.cat-icon btn {
+  text-align: center;
+
+}
+.cat-icon:hover {
+  box-shadow: inset 0 300px 0 0.01px #000;
+}
+.cat-icon {
+  background-image: url('images/cat.png');  
+  background-position:center;
+  /* width: 100%; */
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 3% !important;
+}
+/* .cat-swing {
+  background-image: url(images/cat.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  text-align: center;
+} */
 .page-footer {
 
   clear: both;

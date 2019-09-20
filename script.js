@@ -63,6 +63,60 @@ $(document).ready(function() {
 
 });
 
+/* function animateCat ( $cat, pageWidth ) {
+  $cat.css('left', pageWidth);
+  $cat.animate({
+    left: $cat.width() * -10
+  }, 3000, function(){
+    setTimeout(function(){
+      animateCat($cat, pageWidth);
+    }, 100);
+  });
+} */
+
+
+
+$('.cat-icon').click( "click", function() {
+  $("html, body").animate({ scrollTop: 0 }, "slow");
+  var callbacks = $.Callbacks();
+  callbacks.add($('.wrap').append('<div id="animate" class="cat-swing"></div>'));
+  callbacks.add($('#animate').addClass('animated'));
+  $('#animate').on('animationend', function() {
+    console.log('animation ended');
+    $(this).remove();
+    $('.cat-icon').prop("disabled", false);
+    $("html, body").animate({ scrollTop: $(document).height() }, "slow");
+
+  });
+
+  if('animationstart') {
+    $('.cat-icon').prop("disabled", true);
+
+  }
+  $('.cat-icon').removeClass('clicked');
+  if('animationend' && 'animationstart'.length == 1) {
+    $('.cat-icon').addClass('clicked');
+  }
+
+/* if('animationend' && $('clicked').length >= 1)
+ {
+  $('.cat-icon').remove();
+
+     
+ } */
+ if($('.cat-icon').hasClass('clicked')) {
+  console.log('has clicked');
+  $('#animate').css({
+    "background-image": "url('images/dev-logo.png')",
+    "font-weight": "bolder"
+  });
+}
+
+}); 
+
+
+
+// Myspace
 var nameText = 'Acates Media'
 $('.name').text(nameText);
 
@@ -121,6 +175,7 @@ var yyyy = today.getFullYear();
 
 today = mm + '/' + dd + '/' + yyyy;
 $('.last-login').append(today);
+
 
 // Text Rotator
 var next;
