@@ -274,7 +274,8 @@ a:hover {
 .slide-clicked {
   display: inline-block;
   position: relative;
-  width: 100%;
+  width: 100vw;
+  height: 1000vh;
 }
 
 .slide-clicked:after {
@@ -360,6 +361,11 @@ background-blend-mode: hard-light;
   font-family: 'Julius Sans One', sans-serif;
   font-size: 41px;
   color: #cfc1c0;
+}
+.logo:hover {
+  opacity: 0.3;
+  padding: 3%;
+  transition: 0.5s ease-in-out;
 }
 
 .container>.navbar-header {
@@ -1141,8 +1147,6 @@ body {
   background-repeat: no-repeat;
   z-index:1111;
   transition: 1.5s ease-in-out;
-
-
 }
 
 
@@ -1174,7 +1178,7 @@ body {
 
 }
 .cat-icon:hover {
-  box-shadow: inset 0 300px 0 0.01px #000;
+  box-shadow: inset 0 300px 0 0.01px #3b404ad6;
 }
 .cat-icon {
   background-image: url('images/cat.png');  
@@ -1183,7 +1187,7 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   text-align: center;
-  padding: 3% !important;
+  padding: 3vw;
 }
 /* .cat-swing {
   background-image: url(images/cat.png);
@@ -1520,6 +1524,10 @@ body {
 
   .amc-slides {
     background-position: 0 0;
+  }
+
+  .cat-icon {
+    padding: 10vw !important;
   }
 
   .slide-h1 {
